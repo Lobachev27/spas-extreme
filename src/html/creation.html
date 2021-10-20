@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("./shared/head.html", {
+  "title": ""
+})
+
+<body>
+
+@@include("./components/header.html", {
+  context: {
+    "linkActive": 5,
+  }
+})
+
+<main class="main">
+
+  @@include("./components/logo.html")
+
+  <section class="content">
+    <div class="container">
+      <div class="content__wrapper">
+        <div class="row">
+          <h1 class="title">Галерея творчества</h1>
+        </div>
+
+        @@include("./components/creation-list.html", {
+          context: {
+            arr: [
+              {"img": "./img/creation-01.jpg", "caption": "Дети против терроризма", "description": "", "author": "Найденов Иван, 15 лет", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-02.jpg", "caption": "Нет террора", "description": "", "author": "Кондор Кристина, 13 лет", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-03.jpg", "caption": "Профессия достойная славы", "description": "", "author": "Какунин Денис", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-04.jpg", "caption": "Какая бы ни случилась беда, дружба поможет всегда!", "description": "коллектив группы «Лягушата» (6-7 лет) ГБДОУ детский сад № 27 Курортного района Санкт-Петербурга, воспитатель ", "author": "Андреева Людмила Казимировна", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-05.jpg", "caption": "История пожарного шкафа", "description": "воспитатели детского сада Гайкова Марина Дмитриевна, Воронина Тамара Георгиевна и Григорьева Наталья Николаевна. ", "author": "Художники- иллюстраторы: воспитанники групп «Умнички» и «Звездочка».", "type": "Сказка", "link": "creation-detail-2.html",},
+              {"img": "./img/creation-06.jpg", "caption": "Суровые будни спасателей", "description": "", "author": "Мартюшова Екатерина, 17 лет", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-default.png", "caption": "Все спасены!", "description": "Коллективная работа учащихся первого класса объединения «Занимательная математика» Зеленогорского дома детского творчества. ", "author": "Пономарева Нелли, 12 лет", "type": "Сказка", "link": "creation-detail-2.html",},
+              {"img": "./img/creation-08.jpg", "caption": "Не пользуйтесь самодельными обогревателями", "description": "", "author": "Василиса, 9 лет.", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-09.jpg", "caption": "Дети против терроризма", "description": "", "author": "Найденов Иван, 15 лет", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-01.jpg", "caption": "Дети против терроризма", "description": "", "author": "Найденов Иван, 15 лет", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-02.jpg", "caption": "Нет террора", "description": "", "author": "Кондор Кристина, 13 лет", "type": "Рисунок", "link": "creation-detail-1.html",},
+              {"img": "./img/creation-03.jpg", "caption": "Профессия достойная славы", "description": "", "author": "Какунин Денис", "type": "Рисунок", "link": "creation-detail-1.html",},
+            ]
+          }
+        })
+
+        <div class="content__btn">
+          <a class="btn btn-cherry js-popup" href="#addWork">Добавить работу</a>
+          <a class="btn btn-orange" href="javascript:void(0);">Показать еще</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include("./components/footer.html")
+
+@@include("./components/popup-add-work.html")
+
+@@include("./shared/script.html")
+</body>
+</html>

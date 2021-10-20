@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("./shared/head.html", {
+  "title": ""
+})
+
+<body>
+
+@@include("./components/header.html", {
+  context: {
+    "linkActive": 1,
+  }
+})
+
+<main class="main">
+
+  @@include("./components/logo.html")
+
+  <section class="content">
+    <div class="container">
+      <div class="content__wrapper">
+
+        <div class="content__bgimg">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="row">
+          <h1 class="title">Темы</h1>
+        </div>
+
+        @@include("./components/themes.html", {
+          context: {
+            arr: [
+              {"img": "./img/theme-01.png", "caption": "Пожарная безопасность", "link": "themes-detail.html",},
+              {"img": "./img/theme-02.png", "caption": "Первая помощь", "link": "themes-detail.html",},
+              {"img": "./img/theme-03.png", "caption": "Поведение на воде", "link": "themes-detail.html",},
+              {"img": "./img/theme-04.png", "caption": "Обращение с собаками", "link": "themes-detail.html",},
+              {"img": "./img/theme-05.png", "caption": "Времена года", "link": "themes-detail.html",},
+              {"img": "./img/theme-06.png", "caption": "Дом, школа, улица, природа", "link": "themes-detail.html",},
+              {"img": "./img/theme-07.png", "caption": "Интернет", "link": "themes-detail.html",},
+              {"img": "./img/theme-08.png", "caption": "В самолете", "link": "themes-detail.html",},
+              {"img": "./img/theme-09.png", "caption": "Чрезвычайные ситуации", "link": "themes-detail.html",},
+              {"img": "./img/theme-10.png", "caption": "Противодействие терроризму", "link": "themes-detail.html",},
+            ]
+          }
+        })
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include("./components/footer.html")
+
+@@include("./shared/script.html")
+</body>
+</html>

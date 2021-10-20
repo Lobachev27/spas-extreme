@@ -1,0 +1,19 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  @media screen and ($mobile2) {
+    font-size: 26px;
+  }
+  @media screen and ($tablet1) {
+    font-size: 28px;
+  }
+  @media screen and ($tablet2) {
+    font-size: 30px;
+  }
+  @media screen and ($desktop1) {
+    font-size: 36px;
+  }
+}

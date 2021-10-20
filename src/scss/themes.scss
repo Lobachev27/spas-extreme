@@ -1,0 +1,96 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.themes {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  margin: 30px auto;
+  @media screen and ($mobile1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+  @media screen and ($mobile2) {
+    grid-column-gap: 40px;
+  }
+  @media screen and ($mobile3) {
+    max-width: 400px;
+  }
+  @media screen and ($tablet1) {
+    max-width: initial;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+    margin: 40px 0 60px;
+  }
+  @media screen and ($tablet2) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 60px;
+  }
+  @media screen and ($desktop1) {
+    grid-column-gap: 80px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    @media screen and ($mobile1) {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      & .themes__item-img {
+        transform: scale(0.95);
+        transition: transform 0.5s;
+      }
+
+      & .themes__item-caption {
+        color: $orange;
+        transition: color 0.3s;
+      }
+    }
+
+    &-img {
+      position: relative;
+      width: auto;
+      max-width: 100%;
+      height: 130px;
+      margin: 0 auto 20px;
+      transition: transform 0.5s;
+
+      & img {
+        width: auto;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+      }
+    }
+
+    &-caption {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.4em;
+      text-align: center;
+      transition: color 0.3s;
+      @media screen and ($tablet1) {
+        font-size: 18px;
+      }
+    }
+
+    &-link {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+  }
+}

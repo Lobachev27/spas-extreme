@@ -1,0 +1,20 @@
+<ul class="hero__list">
+  @@for (var i = 0; i < context.arr.length; i++) {
+  <li class="hero__item">
+    <div class="hero__item-img">
+      <img src="`+context.arr[i].img+`" alt="">
+    </div>
+    <div class="hero__item-name">`+context.arr[i].name+`</div>
+    <div class="hero__item-info">
+      <span class="hero__item-age">`+context.arr[i].age+`</span>
+      <span class="hero__item-city">`+context.arr[i].city+`</span>
+    </div>
+    <div class="hero__item-description">`+context.arr[i].description+`</div>
+    <div class="hero__item-btn">
+      <span>Узнать больше</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16.679" height="28" viewBox="0 0 16.679 28"><path d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"/></svg>
+    </div>
+    <a class="hero__item-link" href="`+context.arr[i].link+`"></a>
+  </li>
+  }
+</ul>

@@ -1,0 +1,33 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  &__item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: $black;
+    background-color: transparent;
+    border: 2px dashed transparent;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: color 0.3s, border 0.3s;
+    &.active{
+      color: $orange;
+      font-weight: 700;
+      border: 2px dashed $orange;
+      transition: color 0.3s, border 0.3s;
+    }
+    &:hover{
+      color: $orange;
+      transition: color 0.3s, border 0.3s;
+    }
+  }
+}

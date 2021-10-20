@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("./shared/head.html", {
+  "title": ""
+})
+
+<body>
+
+@@include("./components/header.html", {
+  context: {
+    "linkActive": 7,
+  }
+})
+
+<main class="main">
+
+  @@include("./components/logo.html")
+
+  <section class="content">
+    <div class="container">
+      <div class="content__wrapper">
+
+        <div class="creation-detail">
+          <div class="creation-detail__video">
+            <div class="video-custom-play">
+              <span class="video-play-icon"></span>
+              <video controls preload="none">
+                <source src="./video/f4d3a94624b6cbab09fc818070019889.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="creation-detail__info">
+            <h1 class="creation-detail__caption">Видеоролик «Меняемся вместе»</h1>
+            <div class="creation-detail__type">Видео</div>
+            <div class="creation-detail__description"></div>
+          </div>
+        </div>
+
+        <div class="content__btn">
+          <a class="btn btn-orange" href="javascript:void(0);">Предыдущая</a>
+          <a class="btn btn-orange" href="javascript:void(0);">Следующая</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include("./components/footer.html")
+
+@@include("./shared/script.html")
+</body>
+</html>

@@ -1,0 +1,27 @@
+<div class="winners">
+  <div class="winners__wrapper">
+    <div class="winners__table">
+      <div class="winners__topic">
+        <div class="winners__topic-col col-number"></div>
+        <div class="winners__topic-col col-name">Имя</div>
+        <div class="winners__topic-col col-points">Очки</div>
+        <div class="winners__topic-col col-win">Побед</div>
+        <div class="winners__topic-col col-answer">Ответов</div>
+        <div class="winners__topic-col col-scores">Баллов</div>
+      </div>
+      <ul class="winners__list">
+        @@for (var i = 0; i < context.arr.length; i++) {
+        <li class="winners__item `+context.arr[i].class+`">
+          <div class="winners__item-col col-number"><span>`+context.arr[i].number+`</span></div>
+          <div class="winners__item-col col-name"><span>`+context.arr[i].name+`</span></div>
+          <div class="winners__item-col col-points"><span>`+context.arr[i].points+`</span></div>
+          <div class="winners__item-col col-win"><span>`+context.arr[i].win+`</span></div>
+          <div class="winners__item-col col-answer"><span>`+context.arr[i].answer+`</span></div>
+          <div class="winners__item-col col-scores"><span>`+context.arr[i].scores+`</span></div>
+          <a class="winners__item-link" href="`+context.arr[i].link+`"></a>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>

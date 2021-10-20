@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("./shared/head.html", {
+  "title": ""
+})
+
+<body>
+
+@@include("./components/header.html", {
+  context: {
+    "linkActive": 6,
+  }
+})
+
+<main class="main">
+
+  @@include("./components/logo.html")
+
+  <section class="content">
+    <div class="container">
+      <div class="content__wrapper">
+        <div class="row">
+          <h1 class="title">Таблица победителей</h1>
+        </div>
+
+        @@include("./components/winners.html", {
+          context: {
+            arr: [
+              {"class": "gold", "number": "1", "name": "Иван Петров", "points": "1 011", "win": "36", "answer": "870", "scores": "60 000 000", "link": "profile.html",},
+              {"class": "silver", "number": "2", "name": "Петров Водкин", "points": "1 003", "win": "35", "answer": "851", "scores": "4 850", "link": "profile.html",},
+              {"class": "bronze", "number": "3", "name": "Водник Егор", "points": "989", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "4", "name": "Кравцова Мaрия Сергеевна", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "5", "name": "Владимир Красный Х", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "6", "name": "Юрий Кац", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "7", "name": "Владимирский централ", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "8", "name": "Поцик", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "9", "name": "Школота трололо", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "10", "name": "Сережа Король", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "11", "name": "Ботаник555", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "12", "name": "Сережа Пупкин", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "13", "name": "Головач Лена", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "14", "name": "Жозефина", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+              {"class": "", "number": "15", "name": "Я вас всех играл", "points": "1 011", "win": "36", "answer": "870", "scores": "4 862", "link": "profile.html",},
+            ]
+          }
+        })
+
+        @@include("./components/pagination.html")
+
+        <div class="content__btn">
+          <a class="btn btn-orange" href="javascript:void(0);">Предыдущая</a>
+          <a class="btn btn-orange" href="javascript:void(0);">Следующая</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include("./components/footer.html")
+
+@@include("./shared/script.html")
+</body>
+</html>

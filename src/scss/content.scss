@@ -1,0 +1,129 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.content {
+  position: relative;
+  width: 100%;
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    @media screen and ($tablet2) {
+      padding: 50px 40px;
+    }
+    @media screen and ($desktop1) {
+      padding: 50px 90px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% + 30px);
+      height: 100%;
+      background: url("../img/content-bg.png") no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      z-index: -1;
+      @media screen and ($tablet2) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    @media screen and ($tablet1) {
+      flex-direction: row;
+    }
+
+    & .btn {
+      margin: 0;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 20px;
+        @media screen and ($tablet1) {
+          margin-left: 20px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__bgimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 30px);
+    height: 100%;
+    pointer-events: none;
+
+    & span {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: url("../img/icon-plus-blue.svg") no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      &:nth-child(1) {
+        top: 25px;
+        left: 15px;
+        transform: translate(-50%, -50%);
+        @media screen and ($tablet1) {
+          left: 25px;
+        }
+        @media screen and ($tablet2) {
+          left: 40px;
+        }
+      }
+
+      &:nth-child(2) {
+        top: 25px;
+        right: 15px;
+        transform: translate(50%, -50%);
+        @media screen and ($tablet1) {
+          right: 25px;
+        }
+        @media screen and ($tablet2) {
+          right: 40px;
+        }
+      }
+
+      &:nth-child(3) {
+        bottom: 25px;
+        left: 15px;
+        transform: translate(-50%, 50%);
+        @media screen and ($tablet1) {
+          left: 25px;
+        }
+        @media screen and ($tablet2) {
+          left: 40px;
+        }
+      }
+
+      &:nth-child(4) {
+        bottom: 25px;
+        right: 15px;
+        transform: translate(50%, 50%);
+        @media screen and ($tablet1) {
+          right: 25px;
+        }
+        @media screen and ($tablet2) {
+          right: 40px;
+        }
+      }
+    }
+  }
+}

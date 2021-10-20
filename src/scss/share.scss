@@ -1,0 +1,100 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.share {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  @media screen and ($mobile3) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 10px;
+    align-content: center;
+    width: max-content;
+    margin-top: 10px;
+    @media screen and ($mobile3) {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s;
+
+    &.share__item-ok {
+      background: url("../img/share-box-ok.svg") no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+    }
+
+    &.share__item-vk {
+      background: url("../img/share-box-vk.svg") no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+
+      & svg {
+        height: 125%;
+      }
+    }
+
+    &.share__item-fb {
+      background: url("../img/share-box-fb.svg") no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+    }
+
+    &.share__item-tw {
+      background: url("../img/share-box-tw.svg") no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+
+      & svg {
+        height: 110%;
+      }
+    }
+
+    &:hover {
+      transform: scale(0.9);
+      transition: transform 0.3s;
+    }
+
+    &-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 20px;
+      overflow: hidden;
+    }
+
+    & svg {
+      width: auto;
+      height: 100%;
+      object-position: center;
+      object-fit: contain;
+      fill: $white;
+    }
+  }
+}

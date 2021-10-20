@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("./shared/head.html", {
+  "title": ""
+})
+
+<body>
+
+@@include("./components/header.html", {
+  context: {
+    "linkActive": 4,
+  }
+})
+
+<main class="main">
+
+  @@include("./components/logo.html")
+
+  <section class="content">
+    <div class="container">
+      <div class="content__wrapper">
+
+        <div class="hero-detail">
+          <div class="hero-detail__img">
+            <img src="./img/hero-02.jpg" alt="">
+          </div>
+          <div class="hero-detail__info">
+            <h1 class="hero-detail__caption">Карина Парышева</h1>
+            <div class="hero-detail__data">
+              <span class="hero-detail__age">15 лет,</span>
+              <span class="hero-detail__city">Петропавловск-Камчатский</span>
+            </div>
+            <div class="hero-detail__description">
+              <p>5-летняя Карина Парышева из Петропавловска-Камчатского спасла детей из огня. Возгорание произошло утром 15 октября в квартире ее соседей. Там проживала многодетная семья. Одна из девочек прибежала за помощью к Карине. Она рассказала, что у них возник пожар, и попросила помощи.</p><br>
+              <p>Карина пошла в соседнюю квартиру. Там в одной из комнат полыхал огонь, всё было в дыму. Увидев двоих маленьких детей, девочка взяла их за руки и привела к себе домой. Она надела на малышей и на своих двух братьев тёплые вещи и приложила к их лицам мокрые тряпки.</p><br>
+              <p>«Потом мы взяли кошек и вышли на лестничную площадку. А там уже всё в густом дыму. Стали прорываться сквозь него и тут, на наше счастье, подоспели пожарные», - вспоминает юная героиня.</p><br>
+              <p>Карина оказалась самой старшей из всех несовершеннолетних, кому пришлось спасаться от огня. Соседской девочке, которая прибежала к ней за помощью, а также одному из братьев Карины - по девять лет. Остальным - от двух до пяти лет.</p><br>
+              <p>Руководство Главного управления МЧС России по Камчатскому краю намерено поощрить юную героиню и представить ее к ведомственной награде.</p>
+            </div>
+
+            @@include("./components/share.html", {
+              context: {
+                "text": "Поделиться историей:",
+              }
+            })
+
+          </div>
+        </div>
+
+        <div class="content__btn">
+          <a class="btn btn-orange" href="javascript:void(0);">Предыдущая</a>
+          <a class="btn btn-orange" href="javascript:void(0);">Следующая</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include("./components/footer.html")
+
+@@include("./shared/script.html")
+</body>
+</html>

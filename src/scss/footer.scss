@@ -1,0 +1,123 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px;
+  margin-top: -100px;
+  z-index: 2;
+  @media screen and ($tablet1) {
+    padding-bottom: 60px;
+    margin-top: -130px;
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__social {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 810px;
+    padding: 60px 0;
+    @media screen and ($tablet1) {
+      padding: 80px 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% + 30px);
+      height: 100%;
+      background: url("../img/footer-bg.png") no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      z-index: -1;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 1.4em;
+      font-weight: 700;
+      text-align: center;
+      @media screen and ($tablet1) {
+        font-size: 16px;
+      }
+    }
+
+    & .social {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 10px;
+      margin-top: 20px;
+      @media screen and ($tablet1) {
+        grid-column-gap: 25px;
+        margin-top: 30px;
+      }
+
+      &__link {
+        &:hover {
+          & svg {
+            fill: #fb6a51;
+          }
+        }
+
+        &-img {
+          height: 30px;
+          @media screen and ($tablet1) {
+            height: 40px;
+          }
+        }
+
+        &-text {
+          @media screen and ($tablet1) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      & svg {
+        fill: #ed4b4d;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    @media screen and ($tablet1) {
+      margin-top: 50px;
+    }
+  }
+
+  &__copyright {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    @media screen and ($tablet1) {
+      font-size: 14px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    color: $gray;
+    line-height: 1.5em;
+    text-align: center;
+    @media screen and ($tablet1) {
+      font-size: 13px;
+    }
+  }
+}

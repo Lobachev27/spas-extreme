@@ -1,0 +1,152 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: auto;
+  height: 45px;
+  border-radius: 45px;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &[disabled] {
+    &:hover {
+      transform: scale(1) !important;
+      transition: transform 0.3s;
+      cursor: default;
+    }
+
+    &:before {
+      filter: grayscale(1);
+    }
+  }
+
+  &.btn-gold {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 24px;
+    color: $white;
+    text-transform: lowercase;
+    background: transparent;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 0;
+    width: min-content;
+    transition: transform 0.3s;
+    @media screen and ($mobile2) {
+      font-size: 28px;
+      height: 65px;
+      padding: 0 35px;
+    }
+    @media screen and ($tablet2) {
+      font-size: 36px;
+      height: 80px;
+      padding: 0 35px;
+    }
+
+    &:hover {
+      transform: scale(0.9);
+      transition: transform 0.3s;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 101%;
+      height: 104%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url("../img/btn-orange-2.svg") no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      z-index: -1;
+    }
+  }
+
+  &.btn-orange {
+    background-color: $orange;
+    color: $white;
+    min-width: 220px;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fb9675;
+    }
+  }
+
+  &.btn-red {
+    background-color: $red;
+    color: $white;
+    min-width: 220px;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ed4b4d;
+    }
+  }
+
+  &.btn-blue {
+    background-color: $blue2;
+    color: $white;
+    min-width: 220px;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue3;
+    }
+  }
+
+  &.btn-cherry {
+    background-color: $cherry;
+    color: $white;
+    min-width: 220px;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #b02963;
+    }
+  }
+
+  &.btn-file {
+    background-color: #3399ff;
+    color: $white;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0;
+    min-width: 180px;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    @media screen and ($tablet1) {
+      font-size: 16px;
+      height: 36px;
+    }
+
+    &:hover {
+      background-color: $blue3;
+    }
+  }
+}

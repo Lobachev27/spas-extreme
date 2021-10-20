@@ -1,0 +1,37 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.textarea {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  outline: none;
+  resize: none;
+  background-color: #fff6ac;
+  border: none;
+  box-shadow: 1px 1px 6px 0px rgba(241, 232, 163, 1) inset;
+  padding: 7px 12px;
+  transition: background-color 0.3s;
+  @media screen and ($tablet1) {
+    font-size: 16px;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &::placeholder{
+    color: $gray;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  &.validate-error {
+    background-color: #fb9776;
+    box-shadow: none;
+    transition: background-color 0.3s;
+  }
+}

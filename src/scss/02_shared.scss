@@ -1,0 +1,88 @@
+@import "partials/params";
+@import "partials/mixins";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  position: relative;
+  font-family: 'GolosText';
+  font-weight: 400;
+  font-size: 14px;
+  background-color: $white;
+  color: $black;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 140px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #f6f4fd, #f6f4fd, #fdf9f6);
+  z-index: 2;
+  @media screen and ($tablet1) {
+    padding-bottom: 200px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: $black;
+  line-height: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  color: $black;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ov-hid{
+  overflow-y: hidden !important;
+}

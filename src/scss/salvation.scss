@@ -1,0 +1,336 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.salvation {
+  position: relative;
+  width: 100%;
+  margin: 30px 0 0;
+  @media screen and ($tablet1) {
+    margin: 40px 0 0;
+  }
+
+  &__h2 {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+    @media screen and ($mobile2) {
+      font-size: 26px;
+    }
+    @media screen and ($tablet1) {
+      font-size: 28px;
+    }
+    @media screen and ($tablet2) {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+    @media screen and ($desktop1) {
+      font-size: 36px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.4em;
+    margin: 20px 0 30px;
+    @media screen and ($tablet1) {
+      font-size: 16px;
+      margin: 30px 0;
+    }
+    @media screen and ($tablet2) {
+      font-size: 18px;
+      margin: 40px 0;
+    }
+
+    & p {
+      line-height: 1.4em;
+    }
+  }
+
+  &__download {
+    line-height: 1.4em;
+    margin: 20px 0 30px;
+    @media screen and ($tablet1) {
+      margin: 30px 0;
+    }
+    @media screen and ($tablet2) {
+      margin: 40px 0;
+    }
+
+    &-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: #34acdf;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $blue2;
+        transition: color 0.3s;
+      }
+    }
+
+    &-text {
+      font-size: 12px;
+    }
+  }
+
+  &__winners {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 560px;
+    margin: 20px auto 30px;
+    @media screen and ($tablet1) {
+      margin: 30px auto;
+    }
+    @media screen and ($tablet2) {
+      margin: 40px auto;
+    }
+
+    &-img {
+      display: block;
+      width: 90%;
+      height: auto;
+      object-position: center;
+      object-fit: contain;
+    }
+
+    & .btn {
+      font-weight: 600;
+      width: 100%;
+      padding: 0 12px;
+      margin: 0;
+      @media screen and ($mobile2) {
+        font-size: 18px;
+        height: 50px;
+      }
+      @media screen and ($mobile3) {
+        font-size: 22px;
+        height: 60px;
+      }
+      @media screen and ($tablet1) {
+        font-size: 28px;
+        height: 70px;
+      }
+
+      &.btn-orange {
+        background-color: $orange2;
+
+        &:hover {
+          background-color: #f3ad24;
+        }
+      }
+    }
+  }
+
+  &__contest {
+    position: relative;
+    margin: 20px auto 30px;
+    @media screen and ($tablet1) {
+      margin: 30px auto;
+    }
+    @media screen and ($tablet2) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 40px;
+      margin: 40px auto;
+    }
+
+    &-item {
+      margin-bottom: 15px;
+      @media screen and ($tablet1) {
+        margin-bottom: 30px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-text {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4em;
+      @media screen and ($tablet1) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+    @media screen and ($tablet1) {
+      margin-top: 20px;
+    }
+  }
+
+  &__tab {
+    position: relative;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 1;
+    @media screen and ($mobile1) {
+      padding: 15px 12px;
+      border-radius: 15px;
+    }
+    @media screen and ($mobile2) {
+      padding: 20px;
+      border-radius: 20px;
+    }
+    @media screen and ($mobile3) {
+      padding: 25px;
+      border-radius: 25px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    &.active {
+      background-color: $yellow;
+      transition: background-color 0.3s;
+
+      & .salvation__tab-name {
+        color: $white;
+        transition: color 0.3s;
+
+        & span {
+          background-color: $red;
+          transition: background-color 0.3s;
+        }
+      }
+    }
+
+    &-img {
+      position: relative;
+      height: 90px;
+      @media screen and ($mobile2) {
+        height: 100px;
+      }
+      @media screen and ($mobile3) {
+        height: 120px;
+      }
+
+      & img {
+        width: auto;
+        max-width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+      }
+    }
+
+    &-name {
+      font-size: 12px;
+      color: $blue;
+      line-height: 1.3em;
+      margin-top: 12px;
+      transition: color 0.3s;
+      @media screen and ($mobile1) {
+        font-size: 13px;
+        margin-top: 15px;
+      }
+      @media screen and ($mobile2) {
+        font-size: 14px;
+      }
+      @media screen and ($mobile3) {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      @media screen and ($tablet1) {
+        font-size: 18px;
+      }
+
+
+      & span {
+        transition: background-color 0.3s;
+        padding: 2px 3px;
+      }
+    }
+  }
+
+  &__container {
+    & .salvation__description {
+      margin-bottom: 0;
+
+      & h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.4em;
+        margin: 15px 0;
+        @media screen and ($tablet1) {
+          font-size: 24px;
+          margin: 20px 0;
+        }
+        @media screen and ($tablet2) {
+          font-size: 30px;
+          margin: 25px 0;
+        }
+      }
+
+      & ul {
+        list-style: none;
+        line-height: 1.4em;
+        margin: 15px 0;
+        @media screen and ($tablet1) {
+          margin: 20px 0;
+        }
+        @media screen and ($tablet2) {
+          margin: 25px 0;
+        }
+
+        & li {
+          position: relative;
+          line-height: 1.4em;
+          padding-left: 16px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 0;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            background-color: $yellow;
+            @media screen and ($tablet1) {
+              top: 9px;
+            }
+            @media screen and ($tablet2) {
+              top: 10px;
+            }
+          }
+        }
+      }
+
+      & p {
+        margin: 15px 0;
+        @media screen and ($tablet1) {
+          margin: 20px 0;
+        }
+        @media screen and ($tablet2) {
+          margin: 25px 0;
+        }
+      }
+
+      & a {
+        color: $blue3;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $blue2;
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
+}

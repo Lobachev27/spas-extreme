@@ -1,0 +1,12 @@
+<div class="gallery">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      @@for (var i = 0; i < context.arr.length; i++) {
+      <div class="swiper-slide">
+          <a href="`+context.arr[i]+`" data-fslightbox="gallery1" class="gallery__item"><img src="`+context.arr[i]+`" alt=""></a>
+      </div>
+      }
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>

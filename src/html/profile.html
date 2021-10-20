@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("./shared/head.html", {
+"title": ""
+})
+
+<body>
+
+@@include("./components/header.html", {
+  context: {
+    "linkActive": 6,
+  }
+})
+
+<main class="main">
+
+  @@include("./components/logo.html")
+
+  <section class="content">
+    <div class="container">
+      <div class="content__wrapper">
+
+        <div class="hero-detail hero-detail-profile">
+          <div class="hero-detail__img">
+            <img src="./img/profile-girl.png" alt="">
+            <!--<img src="./img/profile-boy.png" alt="">-->
+          </div>
+          <div class="hero-detail__info">
+            <h1 class="hero-detail__caption">Карина Парышева</h1>
+            <div class="hero-detail__data">
+              <span class="hero-detail__age">15 лет</span>
+            </div>
+
+            <div class="profile">
+              <div class="profile__box">
+                <div class="profile__value">75</div>
+                <div class="profile__text">место</div>
+              </div>
+              <div class="profile__box">
+                <div class="profile__value">1011</div>
+                <div class="profile__text">очки</div>
+              </div>
+              <div class="profile__box">
+                <div class="profile__value">36</div>
+                <div class="profile__text">побед</div>
+              </div>
+              <div class="profile__box">
+                <div class="profile__value">870</div>
+                <div class="profile__text">ответов</div>
+              </div>
+              <div class="profile__box">
+                <div class="profile__value">60 000 000</div>
+                <div class="profile__text">баллов</div>
+              </div>
+            </div>
+
+            @@include("./components/share.html", {
+              context: {
+                "text": "Поделиться:",
+              }
+            })
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include("./components/footer.html")
+
+@@include("./shared/script.html")
+</body>
+</html>

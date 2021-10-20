@@ -1,0 +1,73 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.logo {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  @media screen and ($tablet1) {
+    margin: 30px 0;
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 22vw;
+      min-width: 22vw;
+      margin-right: 10px;
+      line-height: 0;
+      @media screen and ($mobile3) {
+        width: 106px;
+        min-width: 106px;
+        margin-right: 15px;
+      }
+
+      & img {
+        width: 100%;
+        object-position: center;
+        object-fit: contain;
+      }
+    }
+
+    &-text {
+      font-size: 4.9vw;
+      line-height: 1.3em;
+      @media screen and ($mobile3) {
+        font-size: 28px;
+        line-height: 1.25em;
+      }
+      @media screen and ($tablet1) {
+        line-height: 1.2em;
+        text-align: center;
+      }
+      @media screen and ($tablet2) {
+        font-size: 30px;
+      }
+
+      & span {
+        &.text-bold {
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+}

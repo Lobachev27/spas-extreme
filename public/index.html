@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="themes.html">Темы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="news.html">Новости</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="salvation.html"
+              >Звезда спасения 2021</a
+            >
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="hero.html">Герои</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="creation.html">Творчество</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="javascript:void(0);">Игра</a>
+            <ul class="header__dd">
+              <li class="header__item">
+                <a class="header__link" href="profile.html">Профиль</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="winners.html">Победители</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="library.html">Библиотека</a>
+          </li>
+          <li class="header__item">
+            <div class="social">
+              <a
+                class="social__link social__link-ok"
+                href="javascript:void(0);"
+              >
+                <div class="social__link-img">
+                  <svg
+                    id="Bold"
+                    enable-background="new 0 0 24 24"
+                    height="512"
+                    viewBox="0 0 24 24"
+                    width="512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z"
+                    />
+                    <path
+                      d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="social__link social__link-vk"
+                href="javascript:void(0);"
+              >
+                <div class="social__link-img">
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 511.962 511.962"
+                    style="enable-background: new 0 0 511.962 511.962"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176 c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76 c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664 c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584 c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424 c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72 c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448 c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536 c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44 s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96 C488.583,400.807,524.359,398.599,507.399,370.471z"
+                        />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="social__link social__link-ytb"
+                href="javascript:void(0);"
+              >
+                <div class="social__link-img">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="512.000000pt"
+                    height="512.000000pt"
+                    viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <g
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                      stroke="none"
+                    >
+                      <path
+                        d="M2055 4279 c-809 -15 -1284 -52 -1433 -112 -135 -55 -248 -158 -315 -285 -87 -165 -133 -527 -144 -1132 -8 -483 18 -922 73 -1200 59 -303 222 -476 503 -535 256 -54 935 -86 1826 -85 910 0 1558 30 1830 85 89 18 215 81 281 139 69 61 139 166 168 252 80 236 129 923 107 1493 -30 774 -93 1017 -306 1178 -98 74 -166 101 -318 128 -188 32 -640 60 -1117 70 -558 11 -758 12 -1155 4z m645 -1312 c337 -194 612 -357 612 -362 -1 -8 -1216 -715 -1229 -715 -1 0 -3 322 -3 715 0 393 2 715 4 715 2 0 279 -159 616 -353z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="social__link social__link-ing"
+                href="javascript:void(0);"
+              >
+                <div class="social__link-img">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="512.000000pt"
+                    height="512.000000pt"
+                    viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <g
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                      stroke="none"
+                    >
+                      <path
+                        d="M390 5104 c-30 -8 -79 -27 -110 -42 -71 -35 -187 -151 -222 -222 -62 -126 -58 27 -58 -2280 0 -2307 -4 -2154 58 -2280 35 -71 151 -187 222 -222 126 -62 -27 -58 2280 -58 2307 0 2154 -4 2280 58 71 35 187 151 222 222 62 126 58 -27 58 2280 0 2307 4 2154 -58 2280 -35 71 -151 187 -222 222 -126 62 28 58 -2285 57 -1824 0 -2117 -2 -2165 -15z m4139 -507 c19 -7 44 -25 55 -40 20 -27 21 -40 21 -331 0 -276 -2 -304 -18 -330 -36 -54 -60 -57 -383 -54 l-294 3 -32 33 -33 32 0 309 c0 298 1 311 21 338 35 47 66 52 359 52 183 0 281 -4 304 -12z m-1716 -1045 c304 -82 562 -302 684 -584 65 -149 77 -213 77 -408 0 -195 -12 -259 -77 -408 -99 -228 -301 -430 -529 -529 -149 -65 -213 -77 -408 -77 -195 0 -259 12 -408 77 -228 99 -430 301 -529 529 -65 149 -77 213 -77 408 0 148 3 187 22 253 106 383 401 665 782 748 117 26 350 21 463 -9z m-1768 -749 c-24 -59 -22 -367 4 -513 81 -466 398 -887 832 -1105 206 -104 432 -156 679 -156 413 0 770 146 1068 435 231 224 390 520 443 826 26 147 28 454 4 513 -7 16 8 17 261 15 l269 -3 0 -1112 0 -1112 -21 -28 c-11 -15 -36 -33 -55 -40 -49 -17 -3889 -17 -3938 0 -19 7 -44 25 -55 40 -21 28 -21 30 -24 1130 -1 606 0 1107 3 1114 3 10 65 13 271 13 250 0 266 -1 259 -17z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="header__menu">
+          <svg class="m-1" preserveAspectRatio="none">
+            <g data-name="Group 103">
+              <path
+                d="M23.25 0H.75A.752.752 0 000 .75v1.5A.752.752 0 00.75 3h22.5a.752.752 0 00.75-.75V.75a.752.752 0 00-.75-.75z"
+              />
+              <path
+                data-name="grip-lines"
+                d="M23.25 6.136H.75a.752.752 0 00-.75.75v1.5a.752.752 0 00.75.75h22.5a.752.752 0 00.75-.75v-1.5a.752.752 0 00-.75-.75zm0 6.137H.75a.752.752 0 00-.75.75v1.5a.752.752 0 00.75.75h22.5a.752.752 0 00.75-.75v-1.5a.752.752 0 00-.75-.75z"
+              />
+            </g>
+          </svg>
+          <svg class="m-2" viewBox="0 0 329.26933 329">
+            <path
+              d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <div class="header-mobile">
+      <div class="container">
+        <ul class="header-mobile__list">
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="themes.html">Темы</a>
+          </li>
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="news.html">Новости</a>
+          </li>
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="salvation.html"
+              >Звезда спасения 2021</a
+            >
+          </li>
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="hero.html">Герои</a>
+          </li>
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="creation.html">Творчество</a>
+          </li>
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="javascript:void(0);">Игра</a>
+          </li>
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="profile.html">Профиль</a>
+          </li>
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="winners.html">Победители</a>
+          </li>
+          <li class="header-mobile__item">
+            <a class="header-mobile__link" href="library.html">Библиотека</a>
+          </li>
+          <li class="header-mobile__item">
+            <div class="social">
+              <a
+                class="social__link social__link-ok"
+                href="javascript:void(0);"
+              >
+                <div class="social__link-img">
+                  <svg
+                    id="Bold"
+                    enable-background="new 0 0 24 24"
+                    height="512"
+                    viewBox="0 0 24 24"
+                    width="512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z"
+                    />
+                    <path
+                      d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="social__link social__link-vk"
+                href="javascript:void(0);"
+              >
+                <div class="social__link-img">
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 511.962 511.962"
+                    style="enable-background: new 0 0 511.962 511.962"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176 c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76 c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664 c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584 c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424 c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72 c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448 c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536 c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44 s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96 C488.583,400.807,524.359,398.599,507.399,370.471z"
+                        />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="social__link social__link-ytb"
+                href="javascript:void(0);"
+              >
+                <div class="social__link-img">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="512.000000pt"
+                    height="512.000000pt"
+                    viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <g
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                      stroke="none"
+                    >
+                      <path
+                        d="M2055 4279 c-809 -15 -1284 -52 -1433 -112 -135 -55 -248 -158 -315 -285 -87 -165 -133 -527 -144 -1132 -8 -483 18 -922 73 -1200 59 -303 222 -476 503 -535 256 -54 935 -86 1826 -85 910 0 1558 30 1830 85 89 18 215 81 281 139 69 61 139 166 168 252 80 236 129 923 107 1493 -30 774 -93 1017 -306 1178 -98 74 -166 101 -318 128 -188 32 -640 60 -1117 70 -558 11 -758 12 -1155 4z m645 -1312 c337 -194 612 -357 612 -362 -1 -8 -1216 -715 -1229 -715 -1 0 -3 322 -3 715 0 393 2 715 4 715 2 0 279 -159 616 -353z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="social__link social__link-ing"
+                href="javascript:void(0);"
+              >
+                <div class="social__link-img">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="512.000000pt"
+                    height="512.000000pt"
+                    viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <g
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                      stroke="none"
+                    >
+                      <path
+                        d="M390 5104 c-30 -8 -79 -27 -110 -42 -71 -35 -187 -151 -222 -222 -62 -126 -58 27 -58 -2280 0 -2307 -4 -2154 58 -2280 35 -71 151 -187 222 -222 126 -62 -27 -58 2280 -58 2307 0 2154 -4 2280 58 71 35 187 151 222 222 62 126 58 -27 58 2280 0 2307 4 2154 -58 2280 -35 71 -151 187 -222 222 -126 62 28 58 -2285 57 -1824 0 -2117 -2 -2165 -15z m4139 -507 c19 -7 44 -25 55 -40 20 -27 21 -40 21 -331 0 -276 -2 -304 -18 -330 -36 -54 -60 -57 -383 -54 l-294 3 -32 33 -33 32 0 309 c0 298 1 311 21 338 35 47 66 52 359 52 183 0 281 -4 304 -12z m-1716 -1045 c304 -82 562 -302 684 -584 65 -149 77 -213 77 -408 0 -195 -12 -259 -77 -408 -99 -228 -301 -430 -529 -529 -149 -65 -213 -77 -408 -77 -195 0 -259 12 -408 77 -228 99 -430 301 -529 529 -65 149 -77 213 -77 408 0 148 3 187 22 253 106 383 401 665 782 748 117 26 350 21 463 -9z m-1768 -749 c-24 -59 -22 -367 4 -513 81 -466 398 -887 832 -1105 206 -104 432 -156 679 -156 413 0 770 146 1068 435 231 224 390 520 443 826 26 147 28 454 4 513 -7 16 8 17 261 15 l269 -3 0 -1112 0 -1112 -21 -28 c-11 -15 -36 -33 -55 -40 -49 -17 -3889 -17 -3938 0 -19 7 -44 25 -55 40 -21 28 -21 30 -24 1130 -1 606 0 1107 3 1114 3 10 65 13 271 13 250 0 266 -1 259 -17z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="logo">
+        <div class="container">
+          <div class="logo__box">
+            <div class="logo__box-img">
+              <img src="./img/logo.svg" alt="" />
+            </div>
+            <div class="logo__box-text">
+              <span>Портал детской безопасности МЧС России</span><br />
+              <span class="text-bold">Спас Экстрим</span>
+            </div>
+            <a class="logo__box-link" href="/"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro">
+        <div class="container">
+          <div class="intro__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="intro__box">
+                    <img src="./img/intro-1.png" alt="" />
+                    <div class="intro__box-text">Город</div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="intro__box">
+                    <img src="./img/intro-2.png" alt="" />
+                    <div class="intro__box-text">Дом</div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="intro__box">
+                    <img src="./img/intro-3.png" alt="" />
+                    <div class="intro__box-text">Природа</div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="intro__box">
+                    <img src="./img/intro-2.png" alt="" />
+                    <div class="intro__box-text">Дом</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="intro__girl">
+              <img src="./img/girl.png" alt="" />
+            </div>
+            <div class="intro__boy">
+              <img src="./img/boy.png" alt="" />
+            </div>
+            <a class="btn btn-gold" href="javascript:void(0);">Играть</a>
+          </div>
+          <div class="intro__description">
+            Отправляйся вместе с героями в увлекательное путешествие! Помоги
+            героям преодолеть чрезвычайные испытания. Узнай больше о мире
+            безопасности!
+          </div>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="container">
+          <div class="service__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <li class="service__box">
+                    <img
+                      class="service__bg"
+                      src="./img/service-bg-1.png"
+                      alt=""
+                    />
+                    <div class="service__img">
+                      <img src="./img/service-1.svg" alt="" />
+                    </div>
+                    <div class="service__text">Единый</div>
+                    <div class="service__number">112</div>
+                  </li>
+                </div>
+
+                <div class="swiper-slide">
+                  <li class="service__box">
+                    <img
+                      class="service__bg"
+                      src="./img/service-bg-2.png"
+                      alt=""
+                    />
+                    <div class="service__img">
+                      <img src="./img/service-2.svg" alt="" />
+                    </div>
+                    <div class="service__text">Пожарные</div>
+                    <div class="service__number">101</div>
+                  </li>
+                </div>
+
+                <div class="swiper-slide">
+                  <li class="service__box">
+                    <img
+                      class="service__bg"
+                      src="./img/service-bg-3.png"
+                      alt=""
+                    />
+                    <div class="service__img">
+                      <img src="./img/service-3.svg" alt="" />
+                    </div>
+                    <div class="service__text">Полиция</div>
+                    <div class="service__number">102</div>
+                  </li>
+                </div>
+
+                <div class="swiper-slide">
+                  <li class="service__box">
+                    <img
+                      class="service__bg"
+                      src="./img/service-bg-4.png"
+                      alt=""
+                    />
+                    <div class="service__img">
+                      <img src="./img/service-4.svg" alt="" />
+                    </div>
+                    <div class="service__text">Скорая</div>
+                    <div class="service__number">103</div>
+                  </li>
+                </div>
+
+                <div class="swiper-slide">
+                  <li class="service__box">
+                    <img
+                      class="service__bg"
+                      src="./img/service-bg-5.png"
+                      alt=""
+                    />
+                    <div class="service__img">
+                      <img src="./img/service-5.svg" alt="" />
+                    </div>
+                    <div class="service__text">Служба газа</div>
+                    <div class="service__number">104</div>
+                  </li>
+                </div>
+              </div>
+              <div class="service__slider__navigation">
+                <div class="swiper-button-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 443.52 443.52"
+                  >
+                    <path
+                      d="M143.492 221.863L336.226 29.129c6.663-6.664 6.663-17.468 0-24.132-6.665-6.662-17.468-6.662-24.132 0l-204.8 204.8c-6.662 6.664-6.662 17.468 0 24.132l204.8 204.8c6.78 6.548 17.584 6.36 24.132-.42 6.387-6.614 6.387-17.099 0-23.712L143.492 221.863z"
+                    />
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 443.52 443.52"
+                  >
+                    <path
+                      d="M143.492 221.863L336.226 29.129c6.663-6.664 6.663-17.468 0-24.132-6.665-6.662-17.468-6.662-24.132 0l-204.8 204.8c-6.662 6.664-6.662 17.468 0 24.132l204.8 204.8c6.78 6.548 17.584 6.36 24.132-.42 6.387-6.614 6.387-17.099 0-23.712L143.492 221.863z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service__description">
+            Единый экстренный канал помощи: «112» (для любых операторов
+            мобильной связи). По номеру «112» можно звонить бесплатно и
+            круглосуточно.
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="row">
+              <h2 class="title">Юные герои</h2>
+            </div>
+
+            <div class="hero__slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-01.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Сергей Латун</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age">14 лет,</span>
+                        <span class="hero__item-city">Тверская область</span>
+                      </div>
+                      <div class="hero__item-description">
+                        14-летний подросток из Тверской области перелез через
+                        балкон на 4 этаже, чтобы спасти малыша
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-02.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Карина Парышева</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age">15 лет,</span>
+                        <span class="hero__item-city"
+                          >Петропавловск-Камчатский</span
+                        >
+                      </div>
+                      <div class="hero__item-description">
+                        15-летняя Карина Парышева из Петропавловска-Камчатского
+                        спасла детей из огня. Возгорание произошло утром 15
+                        октября в квартире ее соседей. Там проживала многодетная
+                        семья. Одна из девочек прибежала за помощью к Карине.
+                        Она рассказала, что у них возник пожар, и попросила
+                        помощи.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-03.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Полина Леденева</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age">9 лет,</span>
+                        <span class="hero__item-city"
+                          >Новосибирская область</span
+                        >
+                      </div>
+                      <div class="hero__item-description">
+                        История счастливого спасения произошла в деревне Нижний
+                        Коен Новосибирской области. Девятилетняя Полина гостила
+                        у дедушки с бабушкой. Девочка немного простыла, и
+                        вечером долго не могла уснуть, допоздна смотрела
+                        телевизор.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-04.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Паша Иванов</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age">9 лет,</span>
+                        <span class="hero__item-city">Ульяновская область</span>
+                      </div>
+                      <div class="hero__item-description">
+                        В Ульяновской области 9-летний Павел Иванов спас на
+                        пожаре двух малолетних племянниц и свою маму
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-05.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Юра Козлов</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age">15 лет,</span>
+                        <span class="hero__item-city"
+                          >Петропавловск-Камчатский</span
+                        >
+                      </div>
+                      <div class="hero__item-description">
+                        В конце марта около полудня на пульт
+                        единой-дежурно-диспетчерской службы города Заводоуковска
+                        Тюменской области поступило сообщение о пожаре в жилом
+                        двухквартирном доме. По тревоге были подняты пожарные
+                        93-й пожарно-спасательной части.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-06.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Денис и Андрей Любимовы</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age">11 и 12 лет,</span>
+                        <span class="hero__item-city">Омская область</span>
+                      </div>
+                      <div class="hero__item-description">
+                        Под Омском братья-школьники вытащили из огня двух детей.
+                        В селе Юрьево Омской области загорелась квартира. В это
+                        время мимо дома проходили братья Денис и Андрей
+                        Любимовы. Ребята шли на остановку встречать маму, но
+                        остановились. Их внимание привлек странный треск. Дети
+                        обернулись и увидели клубы дыма, вырывающиеся из здания.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-07.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Илья Чалый</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age">16 лет,</span>
+                        <span class="hero__item-city"
+                          >с. Павловка, Амурская область</span
+                        >
+                      </div>
+                      <div class="hero__item-description">
+                        16-летний Илья Чалый из села Павловка Амурской области
+                        спас тонущего мужчину
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-08.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">
+                        Чакар Гитиносулмагомедова
+                      </div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age"></span>
+                        <span class="hero__item-city">Махачкала</span>
+                      </div>
+                      <div class="hero__item-description">
+                        В селе Богатыревка Республики Дагестан восьмиклассница
+                        школы № 43 спасла жизнь ребенку.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-09.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Кирилл Щуков</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age"></span>
+                        <span class="hero__item-city">Волгоград</span>
+                      </div>
+                      <div class="hero__item-description">
+                        4-х летний Кирилл Щуков гулял на улице, когда увидел
+                        свою подругу Юлю на балконе. Соседская девочка и её брат
+                        Гриша были дома одни, в закрытой квартире.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-10.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Даниил Бахарев</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age">8 лет,</span>
+                        <span class="hero__item-city"
+                          >д. Гнёздово, Смоленская область</span
+                        >
+                      </div>
+                      <div class="hero__item-description">
+                        Даниил Бахарев, ученик второго класса, живет в Гнёздове.
+                        Он совершил поступок, достойный настоящего
+                        мужчины, — спас тонущего трехлетнего ребенка. Мальчик
+                        возвращался с футбольной тренировки, взял велосипед и
+                        поехал в соседний двор. Приехав к друзьям, Даниил
+                        заметил на берегу реки непотушенный костер и пошел на
+                        речку Ольшанку, чтобы погасить огонь. Нагнувшись, чтобы
+                        набрать воды, Даня увидел тонущего ребенка. Он закричал
+                        и позвал на помощь, затем бросился в воду.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-11.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Алена Хлыбова</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age"></span>
+                        <span class="hero__item-city"
+                          >Верхошижемье, Кировская область</span
+                        >
+                      </div>
+                      <div class="hero__item-description">
+                        Пожар произошёл в поселке городского типа Верхошижемье
+                        Кировской области днём. Возвращаясь из школы домой,
+                        Алена Хлыбова увидела, что горит родной дом. Она тут же
+                        набрала с мобильного телефона «101» и сообщила о
+                        происшествии.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="hero__item">
+                      <div class="hero__item-img">
+                        <img src="./img/hero-12.jpg" alt="" />
+                      </div>
+                      <div class="hero__item-name">Александр Степанов</div>
+                      <div class="hero__item-info">
+                        <span class="hero__item-age"></span>
+                        <span class="hero__item-city">Норильск</span>
+                      </div>
+                      <div class="hero__item-description">
+                        Александр Степанов возвращался домой и, поднимаясь по
+                        лестничному маршу, обнаружил, что из-под входной двери
+                        одной из квартир 6 этажа многоквартирного жилого дома
+                        идет дым. Старшеклассник сразу же набрал номер пожарной
+                        охраны - «101» и стал барабанить в дверь, догадываясь,
+                        что в квартире кто-то есть.
+                      </div>
+                      <div class="hero__item-btn">
+                        <span>Узнать больше</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.679"
+                          height="28"
+                          viewBox="0 0 16.679 28"
+                        >
+                          <path
+                            d="M16.371 14.744L3.528 27.692a1.051 1.051 0 01-1.487 0L.309 25.96a1.051 1.051 0 010-1.487L10.675 14 .308 3.528a1.051 1.051 0 010-1.487L2.04.309a1.051 1.051 0 011.487 0l12.844 12.947a1.051 1.051 0 010 1.488z"
+                          />
+                        </svg>
+                      </div>
+                      <a class="hero__item-link" href="hero-detail.html"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="content__btn">
+              <a class="btn btn-red" href="hero.html">Все герои</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="news__wrapper">
+            <div class="content__bgimg">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="row">
+              <div class="news__tabs">
+                <a class="news__tab" href="#news">Новости</a>
+                <span>/</span>
+                <a class="news__tab" href="#events">Мероприятия</a>
+              </div>
+            </div>
+            <div id="news" class="news__container">
+              <ul class="news__list">
+                <li class="news__item">
+                  <div class="news__item-date">09 Февраля 2019 16:18</div>
+                  <div class="news__item-caption">
+                    Чтобы детей не коснулась беда!!
+                  </div>
+                  <div class="news__item-description">
+                    В преддверии празднования 370-й годовщины образования
+                    пожарной охраны России, среди воспитанников Сланцевского
+                    детского сада №2 прошли соревнования по пожарной
+                    безопасности, в соревновании участвовали 2 команды, команда
+                    «01», команда «Огнетушитель».
+                  </div>
+                  <a class="news__item-link" href="news-detail.html"></a>
+                </li>
+
+                <li class="news__item">
+                  <div class="news__item-date">08 Февраля 2019 09:14</div>
+                  <div class="news__item-caption">
+                    Школьники усвоили урок пожарной безопасности
+                  </div>
+                  <div class="news__item-description">
+                    В рамках акции «Безопасное жилье» сотрудники межрайонного
+                    отделения надзорной деятельности и профилактической работы
+                    по Сосковскому, Урицкому и Шаблыкинскому районам и
+                    пожарно-спасательной части № 37 по охране послека Шаблыкино
+                    и Шаблыкинского района провели урок пожарной безопасности в
+                    Шаблыкинской средней общеобразовательной школе им. А.Т.
+                    Шурупова.
+                  </div>
+                  <a class="news__item-link" href="news-detail.html"></a>
+                </li>
+
+                <li class="news__item">
+                  <div class="news__item-date">08 Февраля 2019 09:05</div>
+                  <div class="news__item-caption">
+                    Белгородские пожарные и спасатели провели флешмоб «МЧС
+                    России – за безопасность людей!»
+                  </div>
+                  <div class="news__item-description">
+                    Пожарно-спасательный флешмоб под названием «МЧС России – за
+                    безопасность людей!» прошел на лыжероллерной трассе
+                    «Олимпия» города Белгорода. В рамках Года предупреждения
+                    чрезвычайных ситуаций, объявленного в МЧС России,
+                    белгородские пожарные и спасатели встали на лыжи и вместе с
+                    кадетами-спасателями и жителями областного центра приняли
+                    участие в дружеском забеге.
+                  </div>
+                  <a class="news__item-link" href="news-detail.html"></a>
+                </li>
+              </ul>
+
+              <div class="content__btn">
+                <a class="btn btn-blue" href="news.html">Все новости</a>
+              </div>
+            </div>
+            <div id="events" class="news__container">
+              <ul class="news__list">
+                <li class="news__item">
+                  <div class="news__item-date">30 Января 2018 15:00</div>
+                  <div class="news__item-caption">
+                    МЧС России проводит II Всероссийский героико-патриотический
+                    фестиваль детского и юношеского творчества «Звезда Спасения»
+                  </div>
+                  <div class="news__item-description">
+                    МЧС России уже второй раз проводит Всероссийский
+                    героико-патриотический фестиваль детского и юношеского
+                    творчества «Звезда Спасения». Это – уникальный проект,
+                    который призван воспитывать у подрастающего поколения
+                    чувство патриотизма на современных примерах героизма,
+                    популяризировать профессии спасателя и пожарного,
+                    формировать культуру безопасности жизнедеятельности в
+                    детской и молодежной среде.
+                  </div>
+                  <a class="news__item-link" href="news-detail.html"></a>
+                </li>
+
+                <li class="news__item">
+                  <div class="news__item-date">01 Сентября 2017 10:56</div>
+                  <div class="news__item-caption">
+                    Всероссийский Урок по «Основам безопасности
+                    жизнедеятельности» пройдет во всех школах страны 1 сентября
+                  </div>
+                  <div class="news__item-description">
+                    Сегодня сотрудники МЧС России проведут Всероссийский Урок по
+                    «Основам безопасности жизнедеятельности» (ОБЖ) более чем в
+                    40 тысячах учебных заведений России. В этот день в школах и
+                    вузах состоятся не только открытые уроки, но и тренировки по
+                    экстренной эвакуации, показательные выступления пожарных и
+                    спасателей, демонстрация пожарно-спасательной техники и
+                    оборудования. Не останутся в стороне и почти 38 тыс. детских
+                    садов, в которые, начиная с 1 сентября, сотрудники МЧС
+                    России придут с интерактивными играми, ростовыми куклами в
+                    форме пожарного и спасателя и красочными электронными
+                    буклетами.
+                  </div>
+                  <a class="news__item-link" href="news-detail.html"></a>
+                </li>
+
+                <li class="news__item">
+                  <div class="news__item-date">27 Августа 2017 17:00</div>
+                  <div class="news__item-caption">
+                    На Сахалине состоялась презентация компьютерной игры
+                    «Путешествуй безопасно!»
+                  </div>
+                  <div class="news__item-description">
+                    Сегодня в оздоровительно-досуговом центре «Юбилейный»
+                    состоялась презентация компьютерной игры «Путешествуй
+                    безопасно!». Участниками мероприятия стали более 100 детей
+                    отдыхающих в лагере.
+                  </div>
+                  <a class="news__item-link" href="news-detail.html"></a>
+                </li>
+              </ul>
+
+              <div class="content__btn">
+                <a class="btn btn-blue" href="news.html?id=events"
+                  >Все мероприятия</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="creation">
+        <div class="container">
+          <div class="creation__wrapper">
+            <div class="row">
+              <h2 class="title">Галерея творчества</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="creation__slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-01.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Дети против терроризма
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Найденов Иван, 15 лет</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-02.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">Нет террора</div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">
+                    Кондор Кристина, 13 лет
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-03.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Профессия достойная славы
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Какунин Денис</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-04.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Какая бы ни случилась беда, дружба поможет всегда!
+                  </div>
+                  <div class="creation__item-description">
+                    коллектив группы «Лягушата» (6-7 лет) ГБДОУ детский сад № 27
+                    Курортного района Санкт-Петербурга, воспитатель
+                  </div>
+                  <div class="creation__item-author">
+                    Андреева Людмила Казимировна
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-05.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    История пожарного шкафа
+                  </div>
+                  <div class="creation__item-description">
+                    воспитатели детского сада Гайкова Марина Дмитриевна,
+                    Воронина Тамара Георгиевна и Григорьева Наталья Николаевна.
+                  </div>
+                  <div class="creation__item-author">
+                    Художники- иллюстраторы: воспитанники групп «Умнички» и
+                    «Звездочка».
+                  </div>
+                  <div class="creation__item-type">Сказка</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-2.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-06.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Суровые будни спасателей
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">
+                    Мартюшова Екатерина, 17 лет
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-07.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">Все спасены!</div>
+                  <div class="creation__item-description">
+                    Коллективная работа учащихся первого класса объединения
+                    «Занимательная математика» Зеленогорского дома детского
+                    творчества.
+                  </div>
+                  <div class="creation__item-author">
+                    Пономарева Нелли, 12 лет
+                  </div>
+                  <div class="creation__item-type">Сказка</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-2.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-08.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Не пользуйтесь самодельными обогревателями
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Василиса, 9 лет.</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-09.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Дети против терроризма
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Найденов Иван, 15 лет</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-01.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Дети против терроризма
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Найденов Иван, 15 лет</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-02.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">Нет террора</div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">
+                    Кондор Кристина, 13 лет
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-03.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Профессия достойная славы
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Какунин Денис</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-04.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Какая бы ни случилась беда, дружба поможет всегда!
+                  </div>
+                  <div class="creation__item-description">
+                    коллектив группы «Лягушата» (6-7 лет) ГБДОУ детский сад № 27
+                    Курортного района Санкт-Петербурга, воспитатель
+                  </div>
+                  <div class="creation__item-author">
+                    Андреева Людмила Казимировна
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-05.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    История пожарного шкафа
+                  </div>
+                  <div class="creation__item-description">
+                    воспитатели детского сада Гайкова Марина Дмитриевна,
+                    Воронина Тамара Георгиевна и Григорьева Наталья Николаевна.
+                  </div>
+                  <div class="creation__item-author">
+                    Художники- иллюстраторы: воспитанники групп «Умнички» и
+                    «Звездочка».
+                  </div>
+                  <div class="creation__item-type">Сказка</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-2.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-06.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Суровые будни спасателей
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">
+                    Мартюшова Екатерина, 17 лет
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-07.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">Все спасены!</div>
+                  <div class="creation__item-description">
+                    Коллективная работа учащихся первого класса объединения
+                    «Занимательная математика» Зеленогорского дома детского
+                    творчества.
+                  </div>
+                  <div class="creation__item-author">
+                    Пономарева Нелли, 12 лет
+                  </div>
+                  <div class="creation__item-type">Сказка</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-2.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-08.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Не пользуйтесь самодельными обогревателями
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Василиса, 9 лет.</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-09.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Дети против терроризма
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Найденов Иван, 15 лет</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-01.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Дети против терроризма
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Найденов Иван, 15 лет</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-02.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">Нет террора</div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">
+                    Кондор Кристина, 13 лет
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-03.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Профессия достойная славы
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Какунин Денис</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-04.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Какая бы ни случилась беда, дружба поможет всегда!
+                  </div>
+                  <div class="creation__item-description">
+                    коллектив группы «Лягушата» (6-7 лет) ГБДОУ детский сад № 27
+                    Курортного района Санкт-Петербурга, воспитатель
+                  </div>
+                  <div class="creation__item-author">
+                    Андреева Людмила Казимировна
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-05.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    История пожарного шкафа
+                  </div>
+                  <div class="creation__item-description">
+                    воспитатели детского сада Гайкова Марина Дмитриевна,
+                    Воронина Тамара Георгиевна и Григорьева Наталья Николаевна.
+                  </div>
+                  <div class="creation__item-author">
+                    Художники- иллюстраторы: воспитанники групп «Умнички» и
+                    «Звездочка».
+                  </div>
+                  <div class="creation__item-type">Сказка</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-2.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-06.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Суровые будни спасателей
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">
+                    Мартюшова Екатерина, 17 лет
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-07.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">Все спасены!</div>
+                  <div class="creation__item-description">
+                    Коллективная работа учащихся первого класса объединения
+                    «Занимательная математика» Зеленогорского дома детского
+                    творчества.
+                  </div>
+                  <div class="creation__item-author">
+                    Пономарева Нелли, 12 лет
+                  </div>
+                  <div class="creation__item-type">Сказка</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-2.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-08.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Не пользуйтесь самодельными обогревателями
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Василиса, 9 лет.</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-09.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Дети против терроризма
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Найденов Иван, 15 лет</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-01.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Дети против терроризма
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Найденов Иван, 15 лет</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-02.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">Нет террора</div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">
+                    Кондор Кристина, 13 лет
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-03.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Профессия достойная славы
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Какунин Денис</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-04.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Какая бы ни случилась беда, дружба поможет всегда!
+                  </div>
+                  <div class="creation__item-description">
+                    коллектив группы «Лягушата» (6-7 лет) ГБДОУ детский сад № 27
+                    Курортного района Санкт-Петербурга, воспитатель
+                  </div>
+                  <div class="creation__item-author">
+                    Андреева Людмила Казимировна
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-05.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    История пожарного шкафа
+                  </div>
+                  <div class="creation__item-description">
+                    воспитатели детского сада Гайкова Марина Дмитриевна,
+                    Воронина Тамара Георгиевна и Григорьева Наталья Николаевна.
+                  </div>
+                  <div class="creation__item-author">
+                    Художники- иллюстраторы: воспитанники групп «Умнички» и
+                    «Звездочка».
+                  </div>
+                  <div class="creation__item-type">Сказка</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-2.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-06.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Суровые будни спасателей
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">
+                    Мартюшова Екатерина, 17 лет
+                  </div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-07.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">Все спасены!</div>
+                  <div class="creation__item-description">
+                    Коллективная работа учащихся первого класса объединения
+                    «Занимательная математика» Зеленогорского дома детского
+                    творчества.
+                  </div>
+                  <div class="creation__item-author">
+                    Пономарева Нелли, 12 лет
+                  </div>
+                  <div class="creation__item-type">Сказка</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-2.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-08.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Не пользуйтесь самодельными обогревателями
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Василиса, 9 лет.</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="creation__item">
+                  <div class="creation__item-img">
+                    <img src="./img/creation-09.jpg" alt="" />
+                  </div>
+                  <div class="creation__item-caption">
+                    Дети против терроризма
+                  </div>
+                  <div class="creation__item-description"></div>
+                  <div class="creation__item-author">Найденов Иван, 15 лет</div>
+                  <div class="creation__item-type">Рисунок</div>
+                  <a
+                    class="creation__item-link"
+                    href="creation-detail-1.html"
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="creation__wrapper">
+            <div class="content__btn">
+              <a class="btn btn-cherry js-popup" href="#addWork"
+                >Добавить работу</a
+              >
+              <a class="btn btn-orange" href="creation.html">Показать все</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social">
+          <div class="footer__social-text">
+            Подпишись и узнай первым о новостях
+          </div>
+          <div class="social">
+            <a class="social__link social__link-ok" href="javascript:void(0);">
+              <div class="social__link-img">
+                <svg
+                  id="Bold"
+                  enable-background="new 0 0 24 24"
+                  height="512"
+                  viewBox="0 0 24 24"
+                  width="512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z"
+                  />
+                  <path
+                    d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z"
+                  />
+                </svg>
+              </div>
+
+              <span class="social__link-text">Одноклассники</span>
+            </a>
+            <a class="social__link social__link-vk" href="javascript:void(0);">
+              <div class="social__link-img">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 511.962 511.962"
+                  style="enable-background: new 0 0 511.962 511.962"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176 c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76 c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664 c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584 c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424 c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72 c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448 c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536 c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44 s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96 C488.583,400.807,524.359,398.599,507.399,370.471z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </div>
+
+              <span class="social__link-text">ВКонтакте</span>
+            </a>
+            <a class="social__link social__link-ytb" href="javascript:void(0);">
+              <div class="social__link-img">
+                <svg
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="512.000000pt"
+                  height="512.000000pt"
+                  viewBox="0 0 512.000000 512.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g
+                    transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                    stroke="none"
+                  >
+                    <path
+                      d="M2055 4279 c-809 -15 -1284 -52 -1433 -112 -135 -55 -248 -158 -315 -285 -87 -165 -133 -527 -144 -1132 -8 -483 18 -922 73 -1200 59 -303 222 -476 503 -535 256 -54 935 -86 1826 -85 910 0 1558 30 1830 85 89 18 215 81 281 139 69 61 139 166 168 252 80 236 129 923 107 1493 -30 774 -93 1017 -306 1178 -98 74 -166 101 -318 128 -188 32 -640 60 -1117 70 -558 11 -758 12 -1155 4z m645 -1312 c337 -194 612 -357 612 -362 -1 -8 -1216 -715 -1229 -715 -1 0 -3 322 -3 715 0 393 2 715 4 715 2 0 279 -159 616 -353z"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <span class="social__link-text">Youtube</span>
+            </a>
+            <a class="social__link social__link-ing" href="javascript:void(0);">
+              <div class="social__link-img">
+                <svg
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="512.000000pt"
+                  height="512.000000pt"
+                  viewBox="0 0 512.000000 512.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g
+                    transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                    stroke="none"
+                  >
+                    <path
+                      d="M390 5104 c-30 -8 -79 -27 -110 -42 -71 -35 -187 -151 -222 -222 -62 -126 -58 27 -58 -2280 0 -2307 -4 -2154 58 -2280 35 -71 151 -187 222 -222 126 -62 -27 -58 2280 -58 2307 0 2154 -4 2280 58 71 35 187 151 222 222 62 126 58 -27 58 2280 0 2307 4 2154 -58 2280 -35 71 -151 187 -222 222 -126 62 28 58 -2285 57 -1824 0 -2117 -2 -2165 -15z m4139 -507 c19 -7 44 -25 55 -40 20 -27 21 -40 21 -331 0 -276 -2 -304 -18 -330 -36 -54 -60 -57 -383 -54 l-294 3 -32 33 -33 32 0 309 c0 298 1 311 21 338 35 47 66 52 359 52 183 0 281 -4 304 -12z m-1716 -1045 c304 -82 562 -302 684 -584 65 -149 77 -213 77 -408 0 -195 -12 -259 -77 -408 -99 -228 -301 -430 -529 -529 -149 -65 -213 -77 -408 -77 -195 0 -259 12 -408 77 -228 99 -430 301 -529 529 -65 149 -77 213 -77 408 0 148 3 187 22 253 106 383 401 665 782 748 117 26 350 21 463 -9z m-1768 -749 c-24 -59 -22 -367 4 -513 81 -466 398 -887 832 -1105 206 -104 432 -156 679 -156 413 0 770 146 1068 435 231 224 390 520 443 826 26 147 28 454 4 513 -7 16 8 17 261 15 l269 -3 0 -1112 0 -1112 -21 -28 c-11 -15 -36 -33 -55 -40 -49 -17 -3889 -17 -3938 0 -19 7 -44 25 -55 40 -21 28 -21 30 -24 1130 -1 606 0 1107 3 1114 3 10 65 13 271 13 250 0 266 -1 259 -17z"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <span class="social__link-text">Instagram</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">© 2010–2021 «МЧС России»</div>
+          <div class="footer__text">
+            <span
+              >Все права на материалы, находящиеся на сайте, охраняются в
+              соответствии с законодательством РФ.</span
+            ><br />
+            <span
+              >При полном или частичном использовании материалов ссылка на
+              mchs.gov.ru обязательна.</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="addWork" class="popup popup-type1">
+      <div class="popup__wrapper">
+        <div class="popup__close">
+          <img src="./img/icon-close.svg" alt="" />
+        </div>
+        <div class="popup__title">Добавить работу</div>
+        <form class="popup__form">
+          <div class="popup__content">
+            <div class="row">
+              <div class="popup__name">Имя</div>
+              <div class="popup__value">
+                <div class="input__box">
+                  <input
+                    class="input validate-error"
+                    type="text"
+                    autocomplete="off"
+                    required
+                  />
+                  <span class="validate-error">Укажите имя</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="popup__name">Возраст</div>
+              <div class="popup__value">
+                <div class="input__box">
+                  <input
+                    class="input"
+                    type="number"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="popup__name">Телефон</div>
+              <div class="popup__value">
+                <div class="input__box">
+                  <input
+                    class="input"
+                    type="text"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="popup__name">Email</div>
+              <div class="popup__value">
+                <div class="input__box">
+                  <input
+                    class="input"
+                    type="email"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="popup__name"></div>
+              <div class="popup__value">
+                <div class="radio__list">
+                  <label class="radio">
+                    <input type="radio" name="type" required />
+                    <div class="radio__box">Рисунок</div>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="type" required />
+                    <div class="radio__box">История</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="popup__name">Текстовое поле</div>
+              <div class="popup__value">
+                <div class="input__box">
+                  <textarea
+                    class="textarea"
+                    rows="5"
+                    autocomplete="off"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="popup__name">Прикрепить файл</div>
+              <div class="popup__value">
+                <div class="input__box">
+                  <div class="custom-file-upload">
+                    <input
+                      type="file"
+                      id="file"
+                      name="photo[]"
+                      accept="image/x-png,image/jpg,image/jpeg"
+                      multiple
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="popup__name"></div>
+              <div class="popup__value">
+                <label class="checkbox">
+                  <input type="checkbox" name="" required />
+                  <div class="checkbox__box">
+                    Согласен на обработку персональных данных (в соответствии со
+                    ст. 9 Федерального закона от 27 июля 2006 г. №152-Ф3 «О
+                    персональных данных»)
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="popup__buttons">
+            <button class="btn btn-gold" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/fslightbox.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

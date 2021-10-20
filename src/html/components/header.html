@@ -1,0 +1,53 @@
+<header class="header">
+  <div class="container">
+    <ul class="header__list">
+      <li class="header__item"><a class="header__link @@if (context.linkActive === 1){active}" href="themes.html">Темы</a></li>
+      <li class="header__item"><a class="header__link @@if (context.linkActive === 2){active}" href="news.html">Новости</a></li>
+      <li class="header__item"><a class="header__link @@if (context.linkActive === 3){active}" href="salvation.html">Звезда спасения 2021</a></li>
+      <li class="header__item"><a class="header__link @@if (context.linkActive === 4){active}" href="hero.html">Герои</a></li>
+      <li class="header__item"><a class="header__link @@if (context.linkActive === 5){active}" href="creation.html">Творчество</a></li>
+      <li class="header__item">
+        <a class="header__link @@if (context.linkActive === 6){active}" href="javascript:void(0);">Игра</a>
+        <ul class="header__dd">
+          <li class="header__item"><a class="header__link" href="profile.html">Профиль</a></li>
+          <li class="header__item"><a class="header__link" href="winners.html">Победители</a></li>
+        </ul>
+      </li>
+      <li class="header__item"><a class="header__link @@if (context.linkActive === 7){active}" href="library.html">Библиотека</a></li>
+      <li class="header__item">
+        @@include("./social.html", {
+          context: {
+            "linkText": false,
+          }
+        })
+      </li>
+    </ul>
+    <div class="header__menu">
+      <svg class="m-1" preserveAspectRatio="none"><g data-name="Group 103"><path d="M23.25 0H.75A.752.752 0 000 .75v1.5A.752.752 0 00.75 3h22.5a.752.752 0 00.75-.75V.75a.752.752 0 00-.75-.75z"/><path data-name="grip-lines" d="M23.25 6.136H.75a.752.752 0 00-.75.75v1.5a.752.752 0 00.75.75h22.5a.752.752 0 00.75-.75v-1.5a.752.752 0 00-.75-.75zm0 6.137H.75a.752.752 0 00-.75.75v1.5a.752.752 0 00.75.75h22.5a.752.752 0 00.75-.75v-1.5a.752.752 0 00-.75-.75z"/></g></svg>
+      <svg class="m-2" viewBox="0 0 329.26933 329"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+    </div>
+  </div>
+</header>
+
+<div class="header-mobile">
+  <div class="container">
+    <ul class="header-mobile__list">
+      <li class="header-mobile__item"><a class="header-mobile__link" href="themes.html">Темы</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="news.html">Новости</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="salvation.html">Звезда спасения 2021</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="hero.html">Герои</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="creation.html">Творчество</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="javascript:void(0);">Игра</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="profile.html">Профиль</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="winners.html">Победители</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="library.html">Библиотека</a></li>
+      <li class="header-mobile__item">
+        @@include("./social.html", {
+          context: {
+            "linkText": false,
+          }
+        })
+      </li>
+    </ul>
+  </div>
+</div>

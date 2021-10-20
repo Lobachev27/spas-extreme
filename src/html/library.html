@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("./shared/head.html", {
+  "title": ""
+})
+
+<body>
+
+@@include("./components/header.html", {
+  context: {
+    "linkActive": 7,
+  }
+})
+
+<main class="main">
+
+  @@include("./components/logo.html")
+
+  <section class="content">
+    <div class="container">
+      <div class="content__wrapper">
+        <div class="row">
+          <h1 class="title">Библиотека</h1>
+        </div>
+
+        <div class="library">
+          <nav class="library__nav">
+            <a class="library__nav-link active" href="javascript:void(0);">Все</a>
+            <a class="library__nav-link" href="javascript:void(0);">Для детей</a>
+            <a class="library__nav-link" href="javascript:void(0);">Для учителей</a>
+            <a class="library__nav-link" href="javascript:void(0);">Патриотическое воспитание</a>
+            <a class="library__nav-link" href="javascript:void(0);">Видео</a>
+          </nav>
+
+          @@include("./components/library-list.html"})
+
+        </div>
+
+        <div class="content__btn">
+          <a class="btn btn-orange" href="javascript:void(0);">Показать еще</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include("./components/footer.html")
+
+@@include("./shared/script.html")
+</body>
+</html>

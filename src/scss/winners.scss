@@ -1,0 +1,246 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.winners {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  @media screen and ($tablet1) {
+    margin: 30px 0 40px;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: auto;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      height: 3px;
+      width: 3px;
+      cursor: pointer;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 3px #dde8f0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $orange;
+      border-radius: 3px;
+      outline: none;
+      background-clip: border-box;
+      cursor: pointer;
+    }
+  }
+
+  &__table {
+    position: relative;
+    min-width: 914px;
+    padding: 0 0 20px;
+    margin: 0 auto;
+    @media screen and ($tablet2) {
+      padding: 0;
+    }
+  }
+
+  &__topic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #ef433c;
+    border-radius: 12px 12px 0 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px 12px 0 0;
+      background: url("../img/winners-bg.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-col {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      font-size: 18px;
+      font-weight: 600;
+      width: 100%;
+      padding: 15px 10px;
+      color: $white;
+
+      &.col-number {
+        width: 7%;
+        min-width: 7%;
+        justify-content: center;
+      }
+
+      &.col-name {
+        width: 33%;
+        min-width: 33%;
+      }
+
+      &.col-points {
+        width: 15%;
+        min-width: 15%;
+      }
+
+      &.col-win {
+        width: 15%;
+        min-width: 15%;
+      }
+
+      &.col-answer {
+        width: 15%;
+        min-width: 15%;
+      }
+
+      &.col-scores {
+        width: 15%;
+        min-width: 15%;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+
+    &:nth-child(odd) {
+      background-color: #faf8fe;
+    }
+
+    &:nth-child(even) {
+      background-color: $white;
+    }
+
+    &:hover {
+      background-color: #f7e1d7;
+      transition: background-color 0.3s;
+    }
+
+    &.gold {
+      background-color: #ffe866;
+
+      & .winners__item-col {
+        font-weight: 700;
+
+        &.col-number {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 36px;
+          font-weight: 700;
+          color: #ceb320;
+          line-height: 1em;
+        }
+      }
+    }
+
+    &.silver {
+      background-color: #e2e9eb;
+
+      & .winners__item-col {
+        font-weight: 700;
+
+        &.col-number {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 36px;
+          font-weight: 700;
+          color: #a4a8a9;
+          line-height: 1em;
+        }
+      }
+    }
+
+    &.bronze {
+      background-color: #f5c9b3;
+
+      & .winners__item-col {
+        font-weight: 700;
+
+        &.col-number {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 36px;
+          font-weight: 700;
+          color: #b67128;
+          line-height: 1em;
+        }
+      }
+    }
+
+    &-col {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      font-size: 18px;
+      font-weight: 400;
+      width: 100%;
+      padding: 15px 10px;
+      color: $black;
+
+      &.col-number {
+        width: 7%;
+        min-width: 7%;
+        justify-content: center;
+        font-family: 'Kosko';
+        font-weight: 400;
+        padding: 7px 5px;
+      }
+
+      &.col-name {
+        width: 33%;
+        min-width: 33%;
+      }
+
+      &.col-points {
+        width: 15%;
+        min-width: 15%;
+      }
+
+      &.col-win {
+        width: 15%;
+        min-width: 15%;
+      }
+
+      &.col-answer {
+        width: 15%;
+        min-width: 15%;
+      }
+
+      &.col-scores {
+        width: 15%;
+        min-width: 15%;
+      }
+
+      & span {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    &-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+}

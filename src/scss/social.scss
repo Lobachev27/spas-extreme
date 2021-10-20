@@ -1,0 +1,63 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.social {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 10px;
+  align-content: center;
+
+  &__link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+
+    &.social__link-vk {
+      & svg {
+        height: 150%;
+      }
+    }
+
+    &.social__link-ytb {
+      & svg {
+        height: 140%;
+      }
+    }
+
+    &:hover {
+      & svg {
+        fill: $yellow2;
+        transition: fill 0.3s;
+      }
+    }
+
+    &-img {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 20px;
+      overflow: hidden;
+    }
+
+    & svg {
+      width: auto;
+      height: 100%;
+      object-position: center;
+      object-fit: contain;
+      fill: $white;
+      transition: fill 0.3s;
+    }
+
+    &-text {
+      font-size: 10px;
+      color: $gray;
+      margin-top: 7px;
+    }
+  }
+}

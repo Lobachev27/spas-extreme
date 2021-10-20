@@ -1,0 +1,90 @@
+<div id="addWork" class="popup popup-type1">
+  <div class="popup__wrapper">
+    <div class="popup__close">
+      <img src="./img/icon-close.svg" alt="">
+    </div>
+    <div class="popup__title">Добавить работу</div>
+    <form class="popup__form">
+      <div class="popup__content">
+        <div class="row">
+          <div class="popup__name">Имя</div>
+          <div class="popup__value">
+            <div class="input__box">
+              <input class="input validate-error" type="text" autocomplete="off" required>
+              <span class="validate-error">Укажите имя</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="popup__name">Возраст</div>
+          <div class="popup__value">
+            <div class="input__box">
+              <input class="input" type="number" autocomplete="off" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="popup__name">Телефон</div>
+          <div class="popup__value">
+            <div class="input__box">
+              <input class="input" type="text" autocomplete="off" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="popup__name">Email</div>
+          <div class="popup__value">
+            <div class="input__box">
+              <input class="input" type="email" autocomplete="off" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="popup__name"></div>
+          <div class="popup__value">
+            <div class="radio__list">
+              <label class="radio">
+                <input type="radio" name="type" required>
+                <div class="radio__box">Рисунок</div>
+              </label>
+              <label class="radio">
+                <input type="radio" name="type" required>
+                <div class="radio__box">История</div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="popup__name">Текстовое поле</div>
+          <div class="popup__value">
+            <div class="input__box">
+              <textarea class="textarea" rows="5" autocomplete="off"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="popup__name">Прикрепить файл</div>
+          <div class="popup__value">
+            <div class="input__box">
+              <div class="custom-file-upload">
+                <input type="file" id="file" name="photo[]" accept="image/x-png,image/jpg,image/jpeg" multiple>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="popup__name"></div>
+          <div class="popup__value">
+            <label class="checkbox">
+              <input type="checkbox" name="" required>
+              <div class="checkbox__box">Согласен на обработку персональных данных (в соответствии со ст. 9 Федерального закона от 27 июля 2006 г. №152-Ф3 «О персональных данных»)</div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <button class="btn btn-gold" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>

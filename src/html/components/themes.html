@@ -1,0 +1,11 @@
+<ul class="themes">
+  @@for (var i = 0; i < context.arr.length; i++) {
+  <li class="themes__item">
+    <div class="themes__item-img">
+      <img src="`+context.arr[i].img+`" alt="">
+    </div>
+    <div class="themes__item-caption">`+context.arr[i].caption+`</div>
+    <a class="themes__item-link" href="`+context.arr[i].link+`"></a>
+  </li>
+  }
+</ul>

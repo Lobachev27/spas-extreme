@@ -1,0 +1,107 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.news-detail {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  @media screen and ($tablet1) {
+    margin: 40px 0 60px;
+  }
+
+  &__top {
+    @media screen and ($tablet1) {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      grid-column-gap: 20px;
+    }
+    @media screen and ($tablet2) {
+      grid-column-gap: 40px;
+    }
+    @media screen and ($desktop1) {
+      grid-column-gap: 60px;
+    }
+  }
+
+  &__img {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 20px;
+    @media screen and ($tablet1) {
+      margin-bottom: 0;
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+
+  &__data {
+    @media screen and ($tablet1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__caption {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 24px;
+    @media screen and ($mobile2) {
+      font-size: 26px;
+    }
+    @media screen and ($tablet1) {
+      font-size: 28px;
+    }
+    @media screen and ($tablet2) {
+      font-size: 30px;
+    }
+    @media screen and ($desktop1) {
+      font-size: 36px;
+    }
+  }
+
+  &__date {
+    font-size: 12px;
+    color: $gray;
+    margin-top: 5px;
+    @media screen and ($tablet1) {
+      margin-top: 10px;
+    }
+  }
+
+  &__info {
+    @media screen and ($tablet1) {
+      padding: 0 40px;
+    }
+    @media screen and ($tablet2) {
+      padding: 0 60px;
+    }
+    @media screen and ($desktop1) {
+      padding: 0 80px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.4em;
+    margin: 20px 0 30px;
+    @media screen and ($tablet1) {
+      font-size: 16px;
+      margin: 30px 0;
+    }
+    @media screen and ($tablet2) {
+      font-size: 18px;
+      margin: 40px 0;
+    }
+
+    & p {
+      line-height: 1.4em;
+    }
+  }
+}

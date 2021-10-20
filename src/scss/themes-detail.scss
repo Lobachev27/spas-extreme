@@ -1,0 +1,365 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.themes-detail {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  @media screen and ($tablet1) {
+    margin: 40px 0;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    @media screen and ($tablet1) {
+      display: grid;
+      grid-template-columns: 200px auto;
+      grid-column-gap: 20px;
+      width: fit-content;
+    }
+    @media screen and ($tablet2) {
+      grid-column-gap: 40px;
+    }
+    @media screen and ($desktop1) {
+      grid-column-gap: 60px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    height: 130px;
+    margin: 0 auto 20px;
+    @media screen and ($tablet1) {
+      margin-bottom: 0;
+    }
+
+    & img {
+      width: auto;
+      height: 100%;
+      object-position: center;
+      object-fit: contain;
+    }
+  }
+
+  &__data {
+    @media screen and ($tablet1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__caption {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 24px;
+    width: auto;
+    text-align: center;
+    @media screen and ($mobile2) {
+      font-size: 26px;
+    }
+    @media screen and ($tablet1) {
+      font-size: 28px;
+    }
+    @media screen and ($tablet2) {
+      font-size: 30px;
+    }
+    @media screen and ($desktop1) {
+      font-size: 36px;
+    }
+  }
+
+  &__tabs {
+    text-align: center;
+    margin: 20px auto;
+    @media screen and ($tablet1) {
+      margin: 40px auto;
+    }
+    @media screen and ($tablet2) {
+      margin: 60px auto;
+    }
+
+    & > span {
+      display: none;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.7em;
+      margin: 0 5px;
+      @media screen and ($tablet1) {
+        display: inline;
+      }
+      @media screen and ($tablet1) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__tab {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7em;
+    color: $orange;
+    transition: color 0.3s;
+    @media screen and ($tablet1) {
+      display: inline-block;
+    }
+    @media screen and ($tablet1) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: #fb9675;
+      transition: color 0.3s;
+    }
+
+    &.active {
+      color: $blue3;
+      transition: color 0.3s;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.4em;
+    margin: 20px 0 30px;
+    @media screen and ($tablet1) {
+      font-size: 16px;
+      margin: 30px 0;
+    }
+    @media screen and ($tablet2) {
+      font-size: 18px;
+      margin: 40px 0;
+    }
+
+    & p {
+      line-height: 1.4em;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    background: linear-gradient(60deg, #ea7247 50%, #f9b35e 51%, #f18e51 60%, #ea7247 100%);
+    padding: 12px;
+    margin: 20px 0 0;
+    @media screen and ($tablet1) {
+      margin: 30px 0 0;
+    }
+    @media screen and ($tablet2) {
+      margin: 40px 0 0;
+    }
+
+    & .swiper-container {
+      position: relative;
+      background-color: #ffd9c7;
+      padding: 20px 20px 0;
+      margin: 0 auto;
+    }
+
+    & .swiper-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 30px;
+      margin: 0 auto;
+    }
+
+    & .swiper-slide {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    & .swiper-pagination.swiper-pagination-bullets-dynamic{
+      position: relative;
+      padding: 2px 0;
+      & .swiper-pagination-bullet {
+        position: relative;
+        width: 14px;
+        height: 14px;
+        background: linear-gradient(to bottom, $white, #ede4dc, #ddcdbd);
+        opacity: 1;
+        border: 2px solid $orange;
+        margin: 0 5px;
+        z-index: 2;
+        @media screen and ($mobile1) {
+          width: 16px;
+          height: 16px;
+        }
+        @media screen and ($mobile2) {
+          width: 18px;
+          height: 18px;
+          margin: 0 6px;
+        }
+        @media screen and ($mobile3) {
+          width: 20px;
+          height: 20px;
+          margin: 0 6px;
+        }
+
+        &.swiper-pagination-bullet-active {
+          border: 2px solid $orange;
+          background: linear-gradient(to bottom, #ea7247, #f67648, #f9ac5c);
+        }
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    @media screen and ($tablet2) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(389px, 1fr));
+      grid-column-gap: 40px;
+      min-height: 600px;
+    }
+    @media screen and ($desktop1) {
+      min-height: 550px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 1.4em;
+      margin-bottom: 30px;
+      @media screen and ($tablet1) {
+        font-size: 16px;
+      }
+      @media screen and ($tablet2) {
+        font-size: 18px;
+        line-height: 1.3em;
+        margin-bottom: 0;
+      }
+
+      & ol {
+        list-style: none;
+        counter-reset: item;
+        line-height: 1.4em;
+        margin: 0 0 15px;
+        @media screen and ($tablet1) {
+          margin: 0 0 20px;
+        }
+        @media screen and ($tablet2) {
+          line-height: 1.3em;
+          margin: 0 0 25px;
+        }
+
+        & li {
+          position: relative;
+          line-height: 1.4em;
+
+          &:before {
+            content: counter(item) ". ";
+            counter-increment: item;
+            color: $orange;
+            @media screen and ($tablet1) {
+              top: 9px;
+            }
+            @media screen and ($tablet2) {
+              line-height: 1.3em;
+              top: 10px;
+            }
+          }
+        }
+      }
+
+      & ul {
+        list-style: none;
+        line-height: 1.4em;
+        margin: 0 0 15px;
+        @media screen and ($tablet1) {
+          margin: 0 0 20px;
+        }
+        @media screen and ($tablet2) {
+          line-height: 1.3em;
+          margin: 0 0 25px;
+        }
+
+        & li {
+          position: relative;
+          line-height: 1.4em;
+          padding-left: 16px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 0;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            background-color: $orange;
+            @media screen and ($tablet1) {
+              top: 9px;
+            }
+            @media screen and ($tablet2) {
+              line-height: 1.3em;
+              top: 10px;
+            }
+          }
+        }
+      }
+
+      & p {
+        line-height: 1.4em;
+        margin: 0 0 15px;
+        @media screen and ($tablet1) {
+          margin: 0 0 20px;
+        }
+        @media screen and ($tablet2) {
+          line-height: 1.3em;
+          margin: 0 0 25px;
+        }
+
+        &:last-child {
+          @media screen and ($tablet2) {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    &-img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      @media screen and ($tablet1) {
+        width: auto;
+        max-width: 50%;
+        height: 100%;
+        margin: 0 auto;
+      }
+      @media screen and ($tablet2) {
+        max-height: 600px;
+        max-width: initial;
+      }
+      @media screen and ($desktop1) {
+        max-height: 550px;
+      }
+
+      & a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      & img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-position: center top;
+        object-fit: contain;
+      }
+    }
+  }
+}

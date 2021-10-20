@@ -1,0 +1,236 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top right, #ed4b4d, #fb9675);
+  z-index: 101;
+
+  & .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__list {
+    display: none;
+    @media screen and ($tablet2) {
+      display: flex;
+      align-items: center;
+      list-style: none;
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    position: relative;
+    color: $white;
+    padding: 5px 15px 8px;
+    margin-right: 16px;
+    border-radius: 30px;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: $yellow2;
+      transition: color 0.3s;
+
+      & + .header__dd {
+        transition: opacity 0.5s ease-out;
+        pointer-events: auto;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    &.active {
+      background-color: $red;
+      color: $yellow2;
+      transition: color 0.3s;
+    }
+  }
+
+  &__dd {
+    display: none;
+    @media screen and ($tablet1) {
+      position: absolute;
+      display: block;
+      list-style: none;
+      background-color: #fb6a51;
+      box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.25);
+      top: 35px;
+      left: calc(50% - 8px);
+      transform: translateX(-50%);
+      z-index: 200;
+      transition: opacity 0.5s ease-in;
+      pointer-events: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -16px;
+      right: 50%;
+      transform: translateX(50%);
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-bottom: 8px solid #fb6a51;
+    }
+
+    &:hover {
+      transition: opacity 0.5s ease-out;
+      pointer-events: auto;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    & .header__link {
+      display: block;
+      text-align: center;
+      white-space: nowrap;
+      border-radius: 0;
+      padding: 15px;
+      margin: 0;
+
+      &:hover {
+        background-color: #ed4b4d;
+        opacity: 1;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+
+  &__menu {
+    position: relative;
+    min-width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @media screen and ($tablet2) {
+      display: none;
+    }
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      transition: opacity 0.3s;
+
+      &.m-1 {
+        opacity: 1;
+        height: 16px;
+        fill: $white;
+      }
+
+      &.m-2 {
+        opacity: 0;
+        width: 18px;
+        height: 18px;
+        fill: $white;
+      }
+    }
+
+    &.active {
+      & svg {
+        transition: opacity 0.3s;
+
+        &.m-1 {
+          opacity: 0;
+        }
+
+        &.m-2 {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &-mobile {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 49;
+    padding-top: 60px;
+    background: linear-gradient(to bottom right, #ed4b4d, #fb9675);
+    transform: translateX(0);
+    transition: transform 0.7s;
+    overflow: hidden;
+    @media screen and ($tablet2) {
+      display: none;
+    }
+
+    &.active{
+      transform: translateX(100%);
+      transition: transform 0.7s;
+    }
+
+    & .container {
+      height: 100%;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      height: 100%;
+      padding: 0 0 60px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3.5vh;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media screen and ($mobile3) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__link {
+      position: relative;
+      font-size: 6vw;
+      font-weight: 600;
+      color: $white;
+      text-align: center;
+      transition: color 0.3s;
+      @media screen and ($mobile3) {
+        font-size: 26px;
+      }
+
+      &:hover {
+        color: $yellow2;
+        transition: color 0.3s;
+      }
+    }
+
+    & .social {
+      grid-column-gap: 30px;
+      margin-top: 7px;
+
+      &__link {
+        height: 25px;
+      }
+    }
+  }
+}

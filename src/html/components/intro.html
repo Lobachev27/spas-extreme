@@ -1,0 +1,26 @@
+<section class="intro">
+  <div class="container">
+    <div class="intro__slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          @@for (var i = 0; i < context.arr.length; i++) {
+          <div class="swiper-slide">
+            <div class="intro__box">
+              <img src="`+context.arr[i].img+`" alt="">
+              <div class="intro__box-text">`+context.arr[i].text+`</div>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+      <div class="intro__girl">
+        <img src="./img/girl.png" alt="">
+      </div>
+      <div class="intro__boy">
+        <img src="./img/boy.png" alt="">
+      </div>
+      <a class="btn btn-gold" href="@@context.link">Играть</a>
+    </div>
+    <div class="intro__description">@@context.description</div>
+  </div>
+</section>

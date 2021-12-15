@@ -374,6 +374,7 @@ $(document).ready(function() {
   $('.popup__close').click(function(){
     $(this).closest('.popup').removeClass('show');
     $('body').removeClass('ov-hid');
+    $('.popup-video__iframe').attr('src', "");
   });
 
   $(document).mouseup(function (e){
@@ -381,7 +382,19 @@ $(document).ready(function() {
     if (!el.is(e.target) && el.has(e.target).length === 0) {
       el.closest('.popup').removeClass('show');
       $('body').removeClass('ov-hid');
+      $('.popup-video__iframe').attr('src', "");
     }
+  });
+});
+
+/*При клике play открывается соответствующее видео в модальном окне*/
+
+$(function() {
+  var videoSrc = '';
+  $(".video-iframe").on('click', '.btn-play', function() {
+    console.log($(this).attr('data-src'));
+    videoSrc = $(this).data('src');
+    $('.popup-video__iframe').attr('src', videoSrc);
   });
 });
 

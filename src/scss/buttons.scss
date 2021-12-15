@@ -149,4 +149,14 @@
       background-color: $blue3;
     }
   }
+
+  &.btn-play {
+    & svg {
+      fill: $white;
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+      margin-right: 12px;
+    }
+  }
 }

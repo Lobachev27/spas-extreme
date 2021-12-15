@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("./shared/head.html", {
+  "title": ""
+})
+
+<body>
+
+@@include("./components/header.html", {
+  context: {
+    "linkActive": "",
+  }
+})
+
+<main class="main">
+
+  @@include("./components/logo.html")
+
+  <section class="page-404">
+    <div class="container">
+      <div class="page-404__wrap">
+        <div class="page-404__img">
+          <img src="./img/page-404.png" alt="">
+        </div>
+        <div class="page-404__text">такой страницы нет<br> или она переехала по другому адресу</div>
+        <a class="page-404__link" href="./">перейти на главную</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include("./components/footer.html")
+
+@@include("./shared/script.html")
+</body>
+</html>

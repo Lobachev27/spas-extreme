@@ -81,6 +81,121 @@
     }
   }
 
+  &.popup-type2 {
+    & .popup__wrapper {
+      background: url("../img/popup-bg-2.svg") no-repeat;
+      background-position: center;
+      background-size: 100% calc(100% - 50px);
+      max-width: 460px;
+      border-radius: 30px;
+      box-shadow: 0 12px 12px -2px rgba(0,0,0, 0.4);
+      z-index: 2;
+      @media screen and ($tablet1) {
+        box-shadow: 0 30px 18px -6px rgba(0,0,0, 0.4);
+      }
+      @media screen and ($tablet2) {
+        background-size: 100% calc(100% - 100px);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: url("../img/popup-bg-1.svg") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        pointer-events: none;
+        z-index: -1;
+        @media screen and ($tablet2) {
+          height: 80px;
+          top: -20px;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: url("../img/popup-bg-3.svg") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        z-index: -1;
+        pointer-events: none;
+        @media screen and ($tablet2) {
+          height: 80px;
+          bottom: -20px;
+        }
+      }
+    }
+
+    & .popup__message {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4em;
+      text-align: center;
+      padding: 0 20px;
+      @media screen and ($tablet1) {
+        font-size: 18px;
+        padding: 0 40px;
+      }
+      @media screen and ($tablet2) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-video {
+    & .popup__close {
+      z-index: 5;
+    }
+
+    & .popup__wrapper {
+      width: calc(100% - 30px);
+      max-width: initial;
+      height: 52.5vw;
+      position: relative;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $orange;
+      box-shadow: 0 0 20px 10px rgba(74, 13, 115, 0.15);
+      z-index: 2;
+      @media screen and (min-width: 768px) {
+        width: 540px;
+        height: 307px;
+      }
+      @media screen and (min-width: 992px) {
+        width: 838px;
+        height: 472px;
+      }
+
+      & .popup-video {
+        position: relative;
+        height: calc(52.5vw - 2px);
+        overflow: hidden;
+        @media screen and (min-width: 768px) {
+          height: 304px;
+        }
+        @media screen and (min-width: 992px) {
+          height: 470px;
+        }
+
+        &__iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
   &__close {
     position: absolute;
     width: 40px;

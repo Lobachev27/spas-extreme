@@ -1,0 +1,52 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.page-404 {
+  position: relative;
+  margin: auto;
+
+  &__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 293px;
+    & img {
+      width: 100%;
+      object-position: center;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.4em;
+    margin: 30px 0;
+    @media screen and ($tablet1) {
+      font-size: 30px;
+    }
+  }
+
+  &__link {
+    font-size: 17px;
+    color: $blue3;
+    line-height: 1.4em;
+    text-decoration: underline;
+    transition: color 0.3s;
+    @media screen and ($tablet1) {}
+
+    &:hover {
+      color: $blue2;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+  }
+}
